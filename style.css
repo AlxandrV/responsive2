@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 /* Background-color -----------------------*/
 .bg-primary{
     background-color: #103268;
@@ -65,6 +69,9 @@
 }
 .w-social{
     width: 45px;
+}
+.w-100{
+    width: 100%;
 }
 
 /* Height ---------------------------------*/
@@ -144,4 +151,16 @@ input[type="button"]{
     border: none;
     margin-top: 1rem;
     align-self: end;
+}
+
+@media all and (min-width: 768px){
+    footer > div {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    footer > div:last-child > ul{
+        width: 60%;
+    }
 }
